@@ -27,22 +27,14 @@ function addBorder( arr ){
 console.log(addBorder(picture));
 
 
-/*    */
-
-
-/*    */
-
-
-/*    */
-
-
-/*    */
-
-/*    */
-
-
-/*    */
-
+/*  Adding 'n' Digits   */
+function addDigits( inputNums ) {
+ let output = 0;
+ let inputArrSt = inputNums.toString().split('');
+  inputArrSt.forEach( item =>  output += parseInt(item) )
+  return output;
+}
+console.log(addDigits(1117))
 
 /*    */
 
@@ -66,4 +58,17 @@ console.log(addBorder(picture));
 
 /*    */
 
+/*    */
+
+
+/*    */
+
+
+/*    */
+
+
+/*    */
+
+
+/*    */
 
