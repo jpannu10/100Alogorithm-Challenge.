@@ -7,3 +7,4 @@ Will be writting 100 Algorithem's in Javascript.
 Programs : 
 1. Add Numbers.
 2. Adding Borders.
+3. Sum of 'n' Digits.
