@@ -8,3 +8,5 @@ Programs :
 1. Add Numbers.
 2. Adding Borders.
 3. Sum of 'n' Digits.
+4. MaximumProductOfTwoAdjacentValue.
+5. longestStringOutput.
