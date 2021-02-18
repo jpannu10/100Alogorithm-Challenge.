@@ -10,3 +10,5 @@ Programs :
 3. Sum of 'n' Digits.
 4. MaximumProductOfTwoAdjacentValue.
 5. longestStringOutput.
+
+7. Alphabetic Shift.
