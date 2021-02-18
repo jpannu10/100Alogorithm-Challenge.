@@ -69,7 +69,67 @@ console.log(longestStringOutput(['abs', 'jask','0273402397' ,'fd', 'yoh', 'we', 
 
 
 
-/*    */
+/*   Alphabetics Shift   */
+ 
+  function alphabeticsShift1( inStr ){ 
+     let newArr = [];
+   inStr.split('').map((item, index)=>{
+   //getting  'charCodes' and Pushing them into 'new Arr'.
+   newArr.push(inStr.charCodeAt(index) + 1 );
+  })
+
+   // Check for 'charcodes' : '123/{', If there then replace with 'charcodes' 'a: 97'. 
+  newArr = newArr.map((item,index)=>{
+     if(item === 123){
+       return item = 97 ;
+     }else {
+       return item;
+     }
+  })
+//Converting 'UniCode' to 'Actual Values'.
+  newArr = newArr.map((item,index)=>{
+    return String.fromCharCode(item);
+  })
+ return newArr.join('');
+
+}
+ 
+//Better Way.
+    function alphabeticsShift2( strName ) {
+      let newArr = [];
+        let alphabets = [
+        'a', 'b', 'c', 'd', 'e', 'f',
+        'g', 'h', 'i', 'j', 'k', 'l',
+        'm', 'n', 'o', 'p', 'q', 'r',
+        's', 't', 'u', 'v', 'w', 'x',
+        'y', 'z'
+      ];
+
+    let arrList = strName.split('');
+
+      let index = 0;
+      for ( let i = 0 ; i < arrList.length ; i++ ){
+
+          if (arrList[i] !== 'z' ) {
+           index = alphabets.indexOf(arrList[i]) + 1;
+          }else {
+         index = 0;
+          }
+
+          newArr.push(alphabets[index]) ;
+
+      }
+    return newArr.join('');
+    }
+
+
+
+    alphabeticsShift1('crazy');
+    alphabeticsShift2('crazy');
+
+
+
+
 
 /*    */
 
