@@ -12,3 +12,4 @@ Programs :
 5. longestStringOutput.
 
 7. Alphabetic Shift.
+8. alphabetSubSequence
