@@ -129,9 +129,34 @@ console.log(longestStringOutput(['abs', 'jask','0273402397' ,'fd', 'yoh', 'we', 
 
 
 
+/*  AlphabetSubSequence  */
+function alphabetSubSequence(inStr) {
+
+  let baseElement = inStr.charCodeAt(0);
+  let inputArr = inStr.split('');
+ 
+  let  newArr = inputArr.map( (item, index) =>{
+    if( inStr.charCodeAt(index) >= baseElement  ) {
+      baseElement = inStr.charCodeAt(index);
+      return true;
+    }else {
+      return false;
+    }
+  })
+
+   if(newArr.includes(false)){
+     return false;
+   }else {
+     return true;
+   }
+ }
+console.log(alphabetSubSequence('zab'));
+console.log(alphabetSubSequence('effg'));
+console.log(alphabetSubSequence('cdce'));
+console.log(alphabetSubSequence('ace'));
+console.log(alphabetSubSequence('bxz'));
 
 
-/*    */
 
 
 /*    */
