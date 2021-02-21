@@ -13,3 +13,4 @@ Programs :
 
 7. Alphabetic Shift.
 8. alphabetSubSequence
+9. alternating Sums
