@@ -159,8 +159,26 @@ console.log(alphabetSubSequence('bxz'));
 
 
 
-/*    */
+/*  alternatingSums  */
+function alternatingSums( inArr ) {
 
+let team1EvenSum  = 0;
+let team2OddSum = 0;
+
+
+inArr.forEach((item, index)=>{
+
+    if(index % 2 === 0){
+      team1EvenSum += item;
+    }else {
+      team2OddSum += item;
+    }
+
+ })
+ return [team1EvenSum, team2OddSum]
+}
+
+alternatingSums([50, 60, 60, 45, 70])
 
 /*    */
 
