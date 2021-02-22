@@ -180,8 +180,21 @@ inArr.forEach((item, index)=>{
 
 alternatingSums([50, 60, 60, 45, 70])
 
-/*    */
+/*  Equally Strong  */
+function equallyStrong( mL, mR, fL, fR ) {
 
+    let myW =  mL <= mR ? mL : mR;
+    let myS =  mL >= mR ? mL : mR;
+
+    let frW =  fL <= fR ? fL : fR;
+    let frS =  fL >= fR ? fL : fR;
+
+   return ((myW == frW && myS == frS ) ? true : false);
+}
+
+console.log(equallyStrong(10, 15, 15, 10));
+console.log(equallyStrong(15, 10, 15, 10));
+console.log(equallyStrong(15, 10, 15, 9));
 
 /*    */
 
