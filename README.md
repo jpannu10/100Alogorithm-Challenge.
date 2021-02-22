@@ -10,7 +10,8 @@ Programs :
 3. Sum of 'n' Digits.
 4. MaximumProductOfTwoAdjacentValue.
 5. longestStringOutput.
-
+6. 
 7. Alphabetic Shift.
 8. alphabetSubSequence
 9. alternating Sums
+10. Equally Strong
