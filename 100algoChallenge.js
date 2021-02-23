@@ -196,7 +196,48 @@ console.log(equallyStrong(10, 15, 15, 10));
 console.log(equallyStrong(15, 10, 15, 10));
 console.log(equallyStrong(15, 10, 15, 9));
 
-/*    */
+
+
+
+/*  Similar Array  */
+
+function similarArr ( arr1 , arr2 ) {
+ 
+ //First way.
+ arr1 = arr1.sort((a,b)=>{
+  return a-b;
+ });
+  arr2 = arr2.sort((a,b)=>{
+  return a-b;
+ });
+  if(arr1.length !== arr2.length){
+    return false;
+   } else {
+    for ( let i = 0 ; i <= arr1.length ; i++ ) {
+      if(arr1[i] !== arr2[i]){
+        return false
+      }
+    }
+  }
+      return true;
+
+  //2nd Way.
+  arr1 = arr1.sort((a,b)=>{return a-b}).toString();
+  arr2 = arr2.sort((a,b)=>{return a-b}).toString();
+
+   return  arr1 == arr2 ? true : false;
+
+}
+
+console.log(similarArr([1, 4, 3] , [ 1, 2, 3]));
+console.log(similarArr([1, 2, 3], [2 ,1 ,3]));
+console.log(similarArr([ 1 , 2, 2], [ 2, 1 ,1]))
+
+
+
+
+
+
 
 
 /*    */
