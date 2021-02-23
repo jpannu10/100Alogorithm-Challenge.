@@ -15,3 +15,4 @@ Programs :
 8. alphabetSubSequence
 9. alternating Sums
 10. Equally Strong
+11. Similar arrays
