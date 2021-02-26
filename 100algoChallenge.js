@@ -233,14 +233,38 @@ console.log(similarArr([1, 4, 3] , [ 1, 2, 3]));
 console.log(similarArr([1, 2, 3], [2 ,1 ,3]));
 console.log(similarArr([ 1 , 2, 2], [ 2, 1 ,1]))
 
+/*  Array Conversion  */
+// It will calculate, "2-consecutive numbers",sum if even iterations and Product of odd iterations.
+function arrayConversion( inArr ) {
+ let isOdd = true;
+
+ while ( inArr.length !== 1 ) {
+  inArr = sumProduct(inArr , isOdd);
+  isOdd = !isOdd;
+ }
+ return inArr[0];
+}
+
+
+function sumProduct( inArr  , isBoolean ) {
+  let sumProducts = [];
+
+  if(isBoolean) {
+
+for ( let i = 0 ; i < inArr.length ; i+=2 ){
+   sumProducts.push(inArr[i] + inArr[i + 1])
+   }
+  } else {
+  for ( let i = 0 ; i < inArr.length ; i+=2 ){
+   sumProducts.push(inArr[i] * inArr[i + 1])
+  }
+ }
+ return sumProducts;
+}
 
 
 
-
-
-
-
-/*    */
+arrayConversion([1,2,3,4,5,6,7,8]);
 
 /*    */
 
